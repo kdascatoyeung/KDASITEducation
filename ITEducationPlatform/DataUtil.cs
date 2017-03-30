@@ -85,7 +85,7 @@ namespace ITEducationPlatform
         {
             //string query = string.Format("select count(*) from TB_IT_EDU_REPORT where r_correct = 'Yes' and r_user = N'{0}'", user);
             string query = string.Format(@"WITH t as (SELECT TOP 8 [r_id],[r_user],[r_category],[r_questionId],[r_correct],[r_company],[r_insertedAt]
-  FROM [KDTHK_DB].[dbo].[TB_IT_EDU_REPORT]
+  FROM [TB_IT_EDU_REPORT]
   WHERE r_user = N'{0}'
   ORDER BY r_id DESC
 )
