@@ -79,7 +79,6 @@ namespace ITEducationPlatform
             formC1 = new Form_C_Q1(); formC2 = new Form_C_Q2(); formC3 = new Form_C_Q3(); formC4 = new Form_C_Q4();
             formC5 = new Form_C_Q5(); formC6 = new Form_C_Q6(); formC7 = new Form_C_Q7(); formC8 = new Form_C_Q8();
             formC9 = new Form_C_Q9(); formC10 = new Form_C_Q10(); formC11 = new Form_C_Q11(); formC12 = new Form_C_Q12();
-            //formC13 = new Form_C_Q13();
 
             GlobalService.FormList = InitializeListA().Concat(InitializeListB()).Concat(InitializeListC()).Distinct().ToList();
 
