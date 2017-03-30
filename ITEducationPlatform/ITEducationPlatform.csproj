@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F407DF7-C05C-4DEF-B148-19CF765AF82F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ITEducationPlatform</RootNamespace>
+    <AssemblyName>ITEducationPlatform</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\kdthk-dm1\project\IT System\E-Learning\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1425644983_438788.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E44538FB826CA10EE3C5B6A27EE3399EE862C856</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ITEducationPlatform_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdUtil.cs" />
+    <Compile Include="Cover.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cover.Designer.cs">
+      <DependentUpon>Cover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataService.cs" />
+    <Compile Include="DataUtil.cs" />
+    <Compile Include="Form_A_Q1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_A_Q1.Designer.cs">
+      <DependentUpon>Form_A_Q1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_A_Q2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_A_Q2.Designer.cs">
+      <DependentUpon>Form_A_Q2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_A_Q3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_A_Q3.Designer.cs">
+      <DependentUpon>Form_A_Q3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_C_Q10.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_C_Q10.Designer.cs">
+      <DependentUpon>Form_C_Q10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_C_Q11.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_C_Q11.Designer.cs">
+      <DependentUpon>Form_C_Q11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_C_Q12.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_C_Q12.Designer.cs">
+      <DependentUpon>Form_C_Q12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_C_Q13.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_C_Q13.Designer.cs">
+      <DependentUpon>Form_C_Q13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_C_Q7.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_C_Q7.Designer.cs">
+      <DependentUpon>Form_C_Q7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_B_Q1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_B_Q1.Designer.cs">
+      <DependentUpon>Form_B_Q1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_B_Q2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_B_Q2.Designer.cs">
+      <DependentUpon>Form_B_Q2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_B_Q3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_B_Q3.Designer.cs">
+      <DependentUpon>Form_B_Q3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_B_Q4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_B_Q4.Designer.cs">
+      <DependentUpon>Form_B_Q4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_C_Q1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_C_Q1.Designer.cs">
+      <DependentUpon>Form_C_Q1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_C_Q2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_C_Q2.Designer.cs">
+      <DependentUpon>Form_C_Q2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_C_Q3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_C_Q3.Designer.cs">
+      <DependentUpon>Form_C_Q3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_C_Q4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_C_Q4.Designer.cs">
+      <DependentUpon>Form_C_Q4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_C_Q5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_C_Q5.Designer.cs">
+      <DependentUpon>Form_C_Q5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_C_Q6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_C_Q6.Designer.cs">
+      <DependentUpon>Form_C_Q6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_C_Q8.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_C_Q8.Designer.cs">
+      <DependentUpon>Form_C_Q8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_C_Q9.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_C_Q9.Designer.cs">
+      <DependentUpon>Form_C_Q9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalService.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordList.cs" />
+    <Compile Include="SecretBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecretBox.Designer.cs">
+      <DependentUpon>SecretBox.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cover.resx">
+      <DependentUpon>Cover.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_A_Q1.resx">
+      <DependentUpon>Form_A_Q1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_A_Q2.resx">
+      <DependentUpon>Form_A_Q2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_A_Q3.resx">
+      <DependentUpon>Form_A_Q3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_B_Q1.resx">
+      <DependentUpon>Form_B_Q1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_B_Q2.resx">
+      <DependentUpon>Form_B_Q2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_B_Q3.resx">
+      <DependentUpon>Form_B_Q3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_B_Q4.resx">
+      <DependentUpon>Form_B_Q4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_C_Q1.resx">
+      <DependentUpon>Form_C_Q1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_C_Q10.resx">
+      <DependentUpon>Form_C_Q10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_C_Q11.resx">
+      <DependentUpon>Form_C_Q11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_C_Q12.resx">
+      <DependentUpon>Form_C_Q12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_C_Q13.resx">
+      <DependentUpon>Form_C_Q13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_C_Q2.resx">
+      <DependentUpon>Form_C_Q2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_C_Q3.resx">
+      <DependentUpon>Form_C_Q3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_C_Q4.resx">
+      <DependentUpon>Form_C_Q4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_C_Q5.resx">
+      <DependentUpon>Form_C_Q5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_C_Q6.resx">
+      <DependentUpon>Form_C_Q6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_C_Q7.resx">
+      <DependentUpon>Form_C_Q7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_C_Q8.resx">
+      <DependentUpon>Form_C_Q8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_C_Q9.resx">
+      <DependentUpon>Form_C_Q9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SecretBox.resx">
+      <DependentUpon>SecretBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ITEducationPlatform_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick-inside-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-button-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1455874755_flag_hong_kong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1455874755_flag_hong_kong_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1455874735_flag_japan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1455874735_flag_japan_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\press-play-button_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\press-play-button_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\press-play-button_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick-inside-circle_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick-inside-circle_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow-in-circle_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow-in-circle_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\press-play-button_128_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\press-play-button_128_cyan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\press-play-button_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1425644983_438788.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
